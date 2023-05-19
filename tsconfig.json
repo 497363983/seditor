@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "esnext",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@sweditor/*": [
+        "packages/*/dist",
+        "packages/*/src"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "outDir": "dist"
+  },
+  "include": [
+    "**/*.d.ts",
+    "**/*.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/dist"
+  ]
+}
